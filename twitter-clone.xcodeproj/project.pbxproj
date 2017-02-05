@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		71548AB31E47BB5600BAAA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71548AB21E47BB5600BAAA5F /* AppDelegate.swift */; };
-		71548AB51E47BB5600BAAA5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71548AB41E47BB5600BAAA5F /* ViewController.swift */; };
-		71548AB81E47BB5600BAAA5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71548AB61E47BB5600BAAA5F /* Main.storyboard */; };
 		71548ABA1E47BB5600BAAA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71548AB91E47BB5600BAAA5F /* Assets.xcassets */; };
 		71548ABD1E47BB5600BAAA5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71548ABB1E47BB5600BAAA5F /* LaunchScreen.storyboard */; };
+		71548AC51E47BD2E00BAAA5F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71548AC41E47BD2E00BAAA5F /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71548AAF1E47BB5600BAAA5F /* twitter-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "twitter-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71548AB21E47BB5600BAAA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71548AB41E47BB5600BAAA5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		71548AB71E47BB5600BAAA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71548AB91E47BB5600BAAA5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71548ABC1E47BB5600BAAA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71548ABE1E47BB5600BAAA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71548AC41E47BD2E00BAAA5F /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				71548AB21E47BB5600BAAA5F /* AppDelegate.swift */,
-				71548AB41E47BB5600BAAA5F /* ViewController.swift */,
-				71548AB61E47BB5600BAAA5F /* Main.storyboard */,
+				71548AC41E47BD2E00BAAA5F /* HomeController.swift */,
 				71548AB91E47BB5600BAAA5F /* Assets.xcassets */,
 				71548ABB1E47BB5600BAAA5F /* LaunchScreen.storyboard */,
 				71548ABE1E47BB5600BAAA5F /* Info.plist */,
@@ -126,7 +123,6 @@
 			files = (
 				71548ABD1E47BB5600BAAA5F /* LaunchScreen.storyboard in Resources */,
 				71548ABA1E47BB5600BAAA5F /* Assets.xcassets in Resources */,
-				71548AB81E47BB5600BAAA5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +133,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71548AB51E47BB5600BAAA5F /* ViewController.swift in Sources */,
 				71548AB31E47BB5600BAAA5F /* AppDelegate.swift in Sources */,
+				71548AC51E47BD2E00BAAA5F /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71548AB61E47BB5600BAAA5F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71548AB71E47BB5600BAAA5F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		71548ABB1E47BB5600BAAA5F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,6 +288,7 @@
 				71548AC31E47BB5600BAAA5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
