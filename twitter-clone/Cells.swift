@@ -35,6 +35,7 @@ class UserFooter: DatasourceCell {
     let textLabel : UILabel = {
         let label = UILabel()
         label.text = "Show me more"
+        label.textColor = twitterBlue
         label.font = UIFont.systemFont(ofSize: 16)
         return label
         
@@ -87,6 +88,7 @@ class UserCell: DatasourceCell {
         let textView = UITextView()
         textView.text = "Swift ninja and biz"
         textView.font = UIFont.systemFont(ofSize: 15)
+        textView.backgroundColor = .clear
         return textView
         
     }()
