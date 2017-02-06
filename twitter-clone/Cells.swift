@@ -68,7 +68,7 @@ class UserCell: DatasourceCell {
     
     let followButton: UIButton = {
         
-        let twitterBlue = UIColor(r:61, g: 176, b: 244)
+        let twitterBlue = UIColor(r: 61, g: 176, b: 244)
 
         let button = UIButton()
         button.layer.cornerRadius = 5
@@ -77,6 +77,10 @@ class UserCell: DatasourceCell {
         button.layer.borderWidth = 1
         button.setTitle("Follow", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        button.setImage(#imageLiteral(resourceName: "follow"), for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
+        //button.titleEdgeInsets =
         return button
         
     }()
