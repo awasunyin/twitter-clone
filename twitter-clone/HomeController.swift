@@ -48,6 +48,7 @@ class WordCell: UICollectionViewCell {
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    //registering Ids
     let cellId = "cellId"
     let headerId = "headerId"
     let footerId = "footerId"
@@ -91,7 +92,8 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
             return header
         
         } else {
-            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: footerId, withReuseIdentifier: footerId, for: indexPath)
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerId, for: indexPath)
+            footer.backgroundColor = .green
             return footer
         }
     }
@@ -105,5 +107,4 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 100)
     }
-    
 }
