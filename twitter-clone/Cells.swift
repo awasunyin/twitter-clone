@@ -36,34 +36,47 @@ class UserCell: DatasourceCell {
     let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "Test test test"
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
     }()
     
     let profileImageView: UIImageView = {
     
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        imageView.image = #imageLiteral(resourceName: "profile_image")
+        imageView.layer.cornerRadius = 5
+        imageView.layer.masksToBounds = true
         return imageView
 
     }()
     
     let usernameLabel: UILabel = {
         let label = UILabel()
-        label.text = "@username"
-        label.backgroundColor = .purple
+        label.text = "@awasunyin"
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = UIColor(r: 130, g: 130, b: 130)
         return label
     }()
     
     let bioTextView: UITextView = {
         let textView = UITextView()
-        textView.backgroundColor = .yellow
+        textView.text = "Swift ninja and biz"
+        textView.font = UIFont.systemFont(ofSize: 15)
         return textView
         
     }()
     
     let followButton: UIButton = {
+        
+        let twitterBlue = UIColor(r:61, g: 176, b: 244)
+
         let button = UIButton()
-        button.backgroundColor = .cyan
+        button.layer.cornerRadius = 5
+        button.layer.borderColor = twitterBlue.cgColor
+        button.setTitleColor(twitterBlue, for: .normal)
+        button.layer.borderWidth = 1
+        button.setTitle("Follow", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         return button
         
     }()
@@ -81,9 +94,9 @@ class UserCell: DatasourceCell {
         
         nameLabel.anchor(profileImageView.topAnchor, left: profileImageView.rightAnchor, bottom: nil, right: self.rightAnchor, topConstant: 0, leftConstant: 4, bottomConstant: 0, rightConstant: 12, widthConstant: 0, heightConstant: 20)
         
-        usernameLabel.anchor(nameLabel.bottomAnchor, left: nameLabel.leftAnchor, bottom: nil, right: nameLabel.rightAnchor, topConstant: 8, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 20)
+        usernameLabel.anchor(nameLabel.bottomAnchor, left: nameLabel.leftAnchor, bottom: nil, right: nameLabel.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 20)
         
-        bioTextView.anchor(usernameLabel.bottomAnchor, left: usernameLabel.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        bioTextView.anchor(usernameLabel.bottomAnchor, left: usernameLabel.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: -4, leftConstant: -4, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
         
         followButton.anchor(topAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: 12, leftConstant: 0, bottomConstant: 0, rightConstant: 12, widthConstant: 120, heightConstant: 34)
     }
