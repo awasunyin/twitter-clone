@@ -38,7 +38,7 @@ class WordCell: UICollectionViewCell {
         wordLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         wordLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         wordLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-    
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
