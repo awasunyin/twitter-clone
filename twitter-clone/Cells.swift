@@ -29,14 +29,28 @@ class UserCell: DatasourceCell {
         
         //dequeing, redering, setting item in the cell
         didSet {
-            nameLabel.text = datasourceItem as? String
+            //nameLabel.text = datasourceItem as? String
         }
     }
     
     let nameLabel: UILabel = {
-        
         let label = UILabel()
         label.text = "Test test test"
+        return label
+    }()
+    
+    let profileImageView: UIImageView = {
+    
+        let imageView = UIImageView()
+        imageView.backgroundColor = .red
+        return imageView
+
+    }()
+    
+    let usernameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "@username"
+        label.backgroundColor = .purple
         return label
     }()
     
@@ -45,7 +59,12 @@ class UserCell: DatasourceCell {
         super.setupViews()
         backgroundColor = .yellow
         
+        addSubview(profileImageView)
         addSubview(nameLabel)
-        nameLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        
+        profileImageView.anchor(self.topAnchor, left: self.leftAnchor, bottom: nil, right: nil, topConstant: 12, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 50, heightConstant: 50)
+        
+        nameLabel.anchor(profileImageView.topAnchor, left: profileImageView.rightAnchor, bottom: nil, right: self.rightAnchor, topConstant: 0, leftConstant: 4, bottomConstant: 0, rightConstant: 12, widthConstant: 0, heightConstant: 20)
+        
     }
 }
