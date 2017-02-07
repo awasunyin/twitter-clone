@@ -50,14 +50,17 @@ class UserFooter: DatasourceCell {
 }
 
 class UserCell: DatasourceCell {
-    
+   
     override var datasourceItem: Any? {
-        
-        //dequeing, redering, setting item in the cell
+    
         didSet {
-            //nameLabel.text = datasourceItem as? String
+            guard let user = datasourceItem as? User else { return }
+            nameLabel.text = user.name
+            usernameLabel.text = user.username
+            bioTextView.text = user.bioText
         }
     }
+    
     
     let nameLabel: UILabel = {
         let label = UILabel()
