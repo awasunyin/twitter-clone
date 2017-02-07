@@ -16,7 +16,7 @@ class UserHeader: DatasourceCell {
     
     let textLabel : UILabel = {
         let label = UILabel()
-        label.text = "Who to follow"
+        label.text = "WHO TO FOLLOW"
         label.font = UIFont.systemFont(ofSize: 16)
         return label
         
