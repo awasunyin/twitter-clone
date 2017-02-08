@@ -14,8 +14,11 @@ class HomeDatasource: Datasource {
     
         let awaUser = User(name: "Awa Sun Yin", username: "@awasunyin", bioText: "testestetesteststest", profileImage: #imageLiteral(resourceName: "awa_image"))
         
-        let adrianUser = User(name: "Adrian Brink", username: "@adrianbrink", bioText: "testestestestest", profileImage: #imageLiteral(resourceName: "adrian_image"))
-        return [awaUser, adrianUser]
+        let adrianUser = User(name: "Adrian Brink", username: "@adrianbrink", bioText: "testestestestesttestestestestesttestestestestesttestestestestesttestestestestest", profileImage: #imageLiteral(resourceName: "adrian_image"))
+        
+        let kindleCourseUser = User(name: "Kindle Course", username: "@kindleCourse", bioText: "testestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestest", profileImage: #imageLiteral(resourceName: "awa_image"))
+        
+        return [awaUser, adrianUser, kindleCourseUser]
     }()
         
     override func headerClasses() -> [DatasourceCell.Type]? {
