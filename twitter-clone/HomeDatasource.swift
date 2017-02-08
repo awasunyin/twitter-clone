@@ -12,12 +12,12 @@ class HomeDatasource: Datasource {
     
     let users: [User] = {
     
-        let awaUser = User(name: "Awa Sun Yin", username: "@awasunyin", bioText: "testestetestestste")
-        return [awaUser]
+        let awaUser = User(name: "Awa Sun Yin", username: "@awasunyin", bioText: "testestetesteststest", profileImage: #imageLiteral(resourceName: "awa_image"))
+        
+        let adrianUser = User(name: "Adrian Brink", username: "@adrianbrink", bioText: "testestestestest", profileImage: #imageLiteral(resourceName: "adrian_image"))
+        return [awaUser, adrianUser]
     }()
-    
-    //let words = ["user1", "user2", "user3"]
-    
+        
     override func headerClasses() -> [DatasourceCell.Type]? {
         return [UserHeader.self]
     }

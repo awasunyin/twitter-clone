@@ -58,6 +58,7 @@ class UserCell: DatasourceCell {
             nameLabel.text = user.name
             usernameLabel.text = user.username
             bioTextView.text = user.bioText
+            profileImageView.image = user.profileImage
         }
     }
     
@@ -72,7 +73,7 @@ class UserCell: DatasourceCell {
     let profileImageView: UIImageView = {
     
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "profile_image")
+        imageView.image = #imageLiteral(resourceName: "awa_image")
         imageView.layer.cornerRadius = 5
         imageView.layer.masksToBounds = true
         return imageView

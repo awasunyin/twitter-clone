@@ -75,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7153D0A41E48686E003E753F /* HomeDatasource.swift */,
+				7153D0A61E4A7D1A003E753F /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -83,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				7153D0A21E48684F003E753F /* Cells.swift */,
-				7153D0A61E4A7D1A003E753F /* User.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
