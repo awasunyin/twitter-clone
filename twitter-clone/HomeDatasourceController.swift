@@ -13,13 +13,15 @@ class HomeDatasourceController: DatasourceController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBarView()
+        
         //renders the items
         let homeDatasource = HomeDatasource()
         self.datasource = homeDatasource
+
+    }    
         
-    }
-    
-    //will collapse the gap between the cells of the collection view 
+    //will collapse the gap between the cells of the collection view
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
