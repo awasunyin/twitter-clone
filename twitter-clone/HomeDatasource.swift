@@ -37,6 +37,11 @@ class HomeDatasource: Datasource {
         return users[indexPath.item]
     }
     
+    //default section is one, when changed it duplicates the content
+    override func numberOfSections() -> Int {
+        return 2
+    }
+    
     override func numberOfItems(_ section: Int) -> Int {
         return users.count
     }
