@@ -29,8 +29,9 @@ class HomeDatasource: Datasource {
         return [UserFooter.self]
     }
     
+    //for the second section it will show TweetCell
     override func cellClasses() -> [DatasourceCell.Type] {
-        return [UserCell.self]
+        return [UserCell.self, TweetCell.self]
     }
     
     override func item(_ indexPath: IndexPath) -> Any? {
