@@ -13,6 +13,7 @@ class HomeDatasourceController: DatasourceController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //light grey background
         collectionView?.backgroundColor = UIColor(r: 232, g: 236, b: 241)
         
         setupNavigationBarView()
@@ -26,6 +27,7 @@ class HomeDatasourceController: DatasourceController {
     //will collapse the gap between the cells of the collection view
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -44,8 +46,8 @@ class HomeDatasourceController: DatasourceController {
         
         }
         
-        
         return CGSize(width: view.frame.width, height: 150)
+        
     }
     
     //setting size of header, otherwise won't show up

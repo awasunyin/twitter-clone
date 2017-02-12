@@ -22,7 +22,7 @@ class WordCell: UICollectionViewCell {
     let wordLabel: UILabel = {
         let label = UILabel()
         label.text = "test"
-        //needs this, otherwise cells won't show up
+        //required, otherwise cells won't show up
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

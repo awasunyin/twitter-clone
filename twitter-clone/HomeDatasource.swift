@@ -10,6 +10,7 @@ import LBTAComponents
 
 class HomeDatasource: Datasource {
     
+    //dummy data for testing
     let users: [User] = {
     
         let awaUser = User(name: "Awa Sun Yin", username: "@awasunyin", bioText: "testestetesteststest", profileImage: #imageLiteral(resourceName: "awa_image"))
@@ -19,8 +20,10 @@ class HomeDatasource: Datasource {
         let kindleCourseUser = User(name: "Kindle Course", username: "@kindleCourse", bioText: "testestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestesttestestestestest", profileImage: #imageLiteral(resourceName: "awa_image"))
         
         return [awaUser, adrianUser, kindleCourseUser]
+        
     }()
     
+    //temporary data for testing
     let tweets = ["tweet 1", "tweet 2", "tweet 3"]
         
     override func headerClasses() -> [DatasourceCell.Type]? {
@@ -47,6 +50,7 @@ class HomeDatasource: Datasource {
     
     override func numberOfItems(_ section: Int) -> Int {
         if section == 1 {
+            
             return tweets.count
         }
     

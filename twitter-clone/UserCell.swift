@@ -21,12 +21,12 @@ class UserCell: DatasourceCell {
         }
     }
     
-    
     let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "Test test test"
         label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
+        
     }()
     
     let profileImageView: UIImageView = {
@@ -45,6 +45,7 @@ class UserCell: DatasourceCell {
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = UIColor(r: 130, g: 130, b: 130)
         return label
+        
     }()
     
     let bioTextView: UITextView = {
@@ -58,7 +59,6 @@ class UserCell: DatasourceCell {
     
     let followButton: UIButton = {
         
-        
         let button = UIButton()
         button.layer.cornerRadius = 5
         button.layer.borderColor = twitterBlue.cgColor
@@ -69,7 +69,6 @@ class UserCell: DatasourceCell {
         button.setImage(#imageLiteral(resourceName: "follow"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
-        //button.titleEdgeInsets =
         return button
         
     }()
